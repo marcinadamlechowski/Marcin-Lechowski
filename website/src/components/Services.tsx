@@ -47,7 +47,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-slate-50">
+    <section id="services" className="py-20 bg-white border-t border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
@@ -64,20 +64,20 @@ export default function Services() {
             return (
               <div
                 key={index}
-                className="group bg-white rounded-xl shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-200 hover:border-[color:var(--accent)] transform hover:-translate-y-2 hover:scale-105"
+                className="group bg-gradient-to-br from-white to-slate-50 rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-slate-200 hover:border-[color:var(--accent)] transform hover:-translate-y-1"
               >
-                <div className={`h-2 bg-gradient-to-r ${service.color}`}></div>
+                <div className={`h-1 bg-gradient-to-r ${service.color}`}></div>
                 
                 <div className="p-8">
                   <div className={`inline-flex items-center justify-center w-14 h-14 rounded-lg bg-gradient-to-br ${service.color} mb-6 group-hover:scale-110 transition-transform`}>
                     <Icon className="w-7 h-7 text-white" />
                   </div>
 
-                  <h3 className="text-xl font-bold text-slate-900 mb-3">
+                  <h3 className="text-lg font-semibold text-slate-900 mb-3">
                     {service.title}
                   </h3>
 
-                  <p className="text-slate-600 mb-6 leading-relaxed">
+                  <p className="text-slate-600 mb-6 leading-relaxed text-sm">
                     {service.description}
                   </p>
 
@@ -99,7 +99,7 @@ export default function Services() {
           <p className="text-slate-600 mb-6">
             Nie widzisz swojej usługi? Skontaktuj się z nami - doradzimy indywidualną cenę!
           </p>
-          <button className="px-8 py-3 bg-[color:var(--accent)] hover:bg-[color:var(--accent-2)] text-white font-semibold rounded-lg transition-all duration-300">
+          <button className="px-8 py-3 bg-[color:var(--accent)] hover:bg-[color:var(--accent)]/90 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl">
             Zapytaj o wycenę
           </button>
         </div>

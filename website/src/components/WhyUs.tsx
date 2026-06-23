@@ -63,7 +63,7 @@ export default function WhyUs() {
         </div>
 
         {/* Testimonial highlight */}
-        <div className="mt-16 p-8 bg-gradient-to-br from-[color:var(--accent)]/10 to-cyan-50 rounded-2xl border border-[color:var(--accent)]/20">
+        <div className="mt-16 p-8 bg-gradient-to-br from-[color:var(--accent)]/5 to-[color:var(--accent-2)]/5 rounded-2xl border border-[color:var(--accent)]/30">
           <div className="flex items-start gap-4">
             <span className="text-4xl">💬</span>
             <div>

@@ -33,7 +33,7 @@ const reviews = [
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="py-20 bg-slate-50">
+    <section id="reviews" className="py-20 bg-white border-t border-slate-200">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
@@ -50,7 +50,7 @@ export default function Reviews() {
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="group bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 hover:border-[color:var(--accent)]/50"
+              className="group bg-gradient-to-br from-white to-slate-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 hover:border-[color:var(--accent)]"
             >
               <div className="flex items-start justify-between mb-4">
                 <div>
@@ -95,7 +95,7 @@ export default function Reviews() {
           <p className="text-slate-600 mb-6">
             Zostań częścią naszej wspólnoty zadowolonych klientów
           </p>
-          <button className="px-8 py-3 bg-[color:var(--accent)] hover:bg-[color:var(--accent-2)] text-white font-semibold rounded-lg transition-all duration-300">
+          <button className="px-8 py-3 bg-[color:var(--accent)] hover:bg-[color:var(--accent)]/90 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl">
             Umów swoją wizytę
           </button>
         </div>

@@ -57,12 +57,12 @@ export default function AboutUs() {
           </div>
 
           {/* Image placeholder with gradient */}
-          <div className="relative h-96 rounded-2xl overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--accent-2)] to-blue-500 opacity-10"></div>
+          <div className="relative h-96 rounded-2xl overflow-hidden border border-slate-200">
+            <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--accent)]/10 to-[color:var(--accent-2)]/10"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
                 <div className="text-6xl mb-4">🚴‍♂️</div>
-                <p className="text-slate-600 font-semibold">Warsztat w Częstochowie</p>
+                <p className="text-slate-900 font-semibold">Warsztat w Częstochowie</p>
                 <p className="text-slate-500 text-sm mt-2">Fotoreal - wkrótce!</p>
               </div>
             </div>

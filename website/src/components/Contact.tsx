@@ -55,7 +55,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className="py-20 bg-gradient-to-br from-white to-indigo-50 border-t border-slate-200">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
@@ -139,7 +139,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full px-6 py-3 bg-[color:var(--accent)] hover:bg-[color:var(--accent-2)] text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[color:var(--accent)]/30 disabled:opacity-60 disabled:cursor-not-allowed"
+                className="w-full px-6 py-3 bg-[color:var(--accent)] hover:bg-[color:var(--accent)]/90 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[color:var(--accent)]/30 disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 {loading ? 'Wysyłanie...' : 'Wyślij zgłoszenie'}
               </button>
