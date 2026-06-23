@@ -57,7 +57,16 @@ Plik zawiera niezbędne instrukcje do dalszej obsługi, podmiany zdjęć, urucha
 
 Skrypt wygeneruje: `photo1.jpg`, `photo1.webp`, `photo1-thumb.jpg` itd.
 
-5) Edycja treści i danych kontaktowych
+5) Konfiguracja formularza kontaktowego i webhooka
+- Formularz wysyła dane do lokalnego endpointu API: `app/api/contact/route.ts`.
+- Skonfiguruj plik środowiskowy w `website/.env.local` na podstawie `website/.env.example`:
+
+  CONTACT_WEBHOOK_URL="https://example.com/webhook"
+  CONTACT_RECIPIENT_EMAIL="kontakt@serwisrowerowy.pl"
+
+- `CONTACT_WEBHOOK_URL` powinien wskazywać na Twój webhook Discord/Slack lub inny serwis przyjmujący JSON POST.
+- `CONTACT_RECIPIENT_EMAIL` jest opcjonalny i może być użyty w przyszłej integracji e-mail.
+
 - Numer telefonu, email, godziny i adres znajdują się w:
   - `src/components/Contact.tsx`
   - `src/components/Footer.tsx`
