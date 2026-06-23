@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #f1f5f9;
   --foreground: #000000;
   --muted: #6b7280;
   --accent: #4f46e5; /* indigo profesjonalny */

@@ -61,9 +61,11 @@ export default function AboutUs() {
             <div className="absolute inset-0 bg-gradient-to-br from-[color:var(--accent)]/10 to-[color:var(--accent-2)]/10"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
-                <div className="text-6xl mb-4">🚴‍♂️</div>
+                <div className="inline-block p-4 bg-[color:var(--accent)]/10 rounded-lg mb-4">
+                  <div className="text-5xl">🔧</div>
+                </div>
                 <p className="text-slate-900 font-semibold">Warsztat w Częstochowie</p>
-                <p className="text-slate-500 text-sm mt-2">Fotoreal - wkrótce!</p>
+                <p className="text-slate-500 text-sm mt-2">ul. Parkitka 42</p>
               </div>
             </div>
           </div>

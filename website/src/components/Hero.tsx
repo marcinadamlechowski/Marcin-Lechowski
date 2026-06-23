@@ -9,9 +9,9 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-indigo-50 to-white pt-20">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-50 via-white to-slate-100 pt-20">
       {/* Animated background gradient - subtle */}
-      <div className="absolute inset-0 opacity-20">
+      <div className="absolute inset-0 opacity-15">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-[color:var(--accent)] rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[color:var(--accent-2)] rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
       </div>
@@ -20,12 +20,12 @@ export default function Hero() {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="mb-8 inline-block">
           <span className="px-4 py-2 bg-[color:var(--accent)]/5 border border-[color:var(--accent)]/20 rounded-full text-[color:var(--accent)] text-sm font-semibold">
-            🚴 Serwis rowerowy w Częstochowie
+            Profesjonalny serwis rowerowy w Częstochowie
           </span>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 leading-tight">
-          Profesjonalny serwis{' '}
+          Serwis{' '}
           <span className="bg-gradient-to-r from-[color:var(--accent)] to-[color:var(--accent-2)] bg-clip-text text-transparent">
             dla Twojego roweru
           </span>
@@ -45,9 +45,9 @@ export default function Hero() {
           </button>
           <a
             href="tel:+48123456789"
-            className="px-8 py-4 bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold rounded-lg transition-all duration-300 border border-slate-300 hover:border-slate-400"
+            className="px-8 py-4 bg-slate-200 hover:bg-slate-300 text-slate-900 font-semibold rounded-lg transition-all duration-300 border border-slate-300 hover:border-slate-400"
           >
-            📞 Zadzwoń teraz
+            Zadzwoń teraz
           </a>
         </div>
 

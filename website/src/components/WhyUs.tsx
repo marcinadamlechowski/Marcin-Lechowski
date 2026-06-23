@@ -65,7 +65,11 @@ export default function WhyUs() {
         {/* Testimonial highlight */}
         <div className="mt-16 p-8 bg-gradient-to-br from-[color:var(--accent)]/5 to-[color:var(--accent-2)]/5 rounded-2xl border border-[color:var(--accent)]/30">
           <div className="flex items-start gap-4">
-            <span className="text-4xl">💬</span>
+            <div className="flex-shrink-0">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[color:var(--accent)]/10">
+                <span className="text-xl font-semibold text-[color:var(--accent)]">"</span>
+              </div>
+            </div>
             <div>
               <p className="text-lg text-slate-700 italic mb-4">
                 "Byłem u kilku innych serwisów w mieście, ale tutaj czuję się jak u przyjaciół. Pan wie o rowerach wszystko, a ceny są uczciwe. Teraz to mój ulubiony serwis w Częstochowie!"
