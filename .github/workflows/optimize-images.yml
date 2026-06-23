@@ -1,0 +1,20 @@
+name: Optimize Images
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Install dependencies and optimize images
+        working-directory: website
+        run: |
+          npm ci
+          npm run fetch-images
