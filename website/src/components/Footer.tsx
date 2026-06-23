@@ -47,9 +47,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#contact" className="text-slate-400 hover:text-[color:var(--accent-2)] transition-colors text-sm">
+                <Link href="/contact" className="text-slate-400 hover:text-[color:var(--accent-2)] transition-colors text-sm">
                   Kontakt
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

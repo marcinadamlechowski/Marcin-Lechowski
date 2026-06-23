@@ -81,7 +81,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-green-500 focus:ring-2 focus:ring-green-500/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-[color:var(--accent)] focus:ring-2 focus:ring-[color:var(--accent)]/20 outline-none transition-all"
                   placeholder="Jan Kowalski"
                 />
               </div>
@@ -97,7 +97,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-green-500 focus:ring-2 focus:ring-green-500/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-[color:var(--accent)] focus:ring-2 focus:ring-[color:var(--accent)]/20 outline-none transition-all"
                   placeholder="+48 123 456 789"
                 />
               </div>
@@ -112,7 +112,7 @@ export default function Contact() {
                   value={formData.problem}
                   onChange={handleChange}
                   rows={4}
-                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-green-500 focus:ring-2 focus:ring-green-500/20 outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-[color:var(--accent)] focus:ring-2 focus:ring-[color:var(--accent)]/20 outline-none transition-all resize-none"
                   placeholder="Np. hamulce nie działają prawidłowo, rower jedzie do boku..."
                 />
               </div>
@@ -126,7 +126,7 @@ export default function Contact() {
                   name="preferredDate"
                   value={formData.preferredDate}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-green-500 focus:ring-2 focus:ring-green-500/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:border-[color:var(--accent)] focus:ring-2 focus:ring-[color:var(--accent)]/20 outline-none transition-all"
                 >
                   <option value="">Wybierz termin</option>
                   <option value="today">Dzisiaj (jeśli możliwe)</option>
@@ -139,7 +139,7 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full px-6 py-3 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-green-500/30 disabled:opacity-60 disabled:cursor-not-allowed"
+                className="w-full px-6 py-3 bg-[color:var(--accent)] hover:bg-[color:var(--accent-2)] text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[color:var(--accent)]/30 disabled:opacity-60 disabled:cursor-not-allowed"
               >
                 {loading ? 'Wysyłanie...' : 'Wyślij zgłoszenie'}
               </button>
@@ -151,8 +151,8 @@ export default function Contact() {
               )}
 
               {submitted && (
-                <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
-                  <p className="text-green-800 font-medium">✓ Dziękujemy! Otrzymaliśmy Twoją wiadomość. Oddzwonimy wkrótce!</p>
+                <div className="p-4 bg-[color:var(--accent)]/10 border border-[color:var(--accent)]/20 rounded-lg">
+                  <p className="text-[color:var(--accent)] font-medium">✓ Dziękujemy! Otrzymaliśmy Twoją wiadomość. Oddzwonimy wkrótce!</p>
                 </div>
               )}
             </form>
@@ -162,13 +162,13 @@ export default function Contact() {
           <div className="space-y-8">
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-green-500/10">
-                  <Phone className="w-6 h-6 text-green-600" />
+                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[color:var(--accent)]/10">
+                  <Phone className="w-6 h-6 text-[color:var(--accent)]" />
                 </div>
               </div>
               <div>
                 <h3 className="font-semibold text-slate-900 mb-1">Telefon</h3>
-                <a href="tel:+48123456789" className="text-green-600 hover:text-green-700 text-lg font-medium">
+                <a href="tel:+48123456789" className="text-[color:var(--accent)] hover:text-[color:var(--accent-2)] text-lg font-medium">
                   +48 123 456 789
                 </a>
                 <p className="text-slate-600 text-sm mt-1">Dostępni pn-pt 9:00-18:00, sobota 10:00-16:00</p>
@@ -177,13 +177,13 @@ export default function Contact() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-green-500/10">
-                  <Mail className="w-6 h-6 text-green-600" />
+                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[color:var(--accent)]/10">
+                  <Mail className="w-6 h-6 text-[color:var(--accent)]" />
                 </div>
               </div>
               <div>
                 <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
-                <a href="mailto:kontakt@serwisrowerowy.pl" className="text-green-600 hover:text-green-700 text-lg font-medium">
+                <a href="mailto:kontakt@serwisrowerowy.pl" className="text-[color:var(--accent)] hover:text-[color:var(--accent-2)] text-lg font-medium">
                   kontakt@serwisrowerowy.pl
                 </a>
                 <p className="text-slate-600 text-sm mt-1">Odpowiadamy w ciągu 24h</p>
@@ -192,8 +192,8 @@ export default function Contact() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-green-500/10">
-                  <MapPin className="w-6 h-6 text-green-600" />
+                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[color:var(--accent)]/10">
+                  <MapPin className="w-6 h-6 text-[color:var(--accent)]" />
                 </div>
               </div>
               <div>
@@ -206,8 +206,8 @@ export default function Contact() {
 
             <div className="flex gap-4">
               <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-green-500/10">
-                  <Clock className="w-6 h-6 text-green-600" />
+                <div className="flex items-center justify-center h-12 w-12 rounded-lg bg-[color:var(--accent)]/10">
+                  <Clock className="w-6 h-6 text-[color:var(--accent)]" />
                 </div>
               </div>
               <div>
